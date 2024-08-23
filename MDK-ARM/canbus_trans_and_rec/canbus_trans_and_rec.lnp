@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"canbus_trans_and_rec\startup_stm32f103xb.o"
+"canbus_trans_and_rec\main.o"
+"canbus_trans_and_rec\stm32f1xx_it.o"
+"canbus_trans_and_rec\stm32f1xx_hal_msp.o"
+"canbus_trans_and_rec\stm32f1xx_hal_gpio_ex.o"
+"canbus_trans_and_rec\stm32f1xx_hal_can.o"
+"canbus_trans_and_rec\stm32f1xx_hal.o"
+"canbus_trans_and_rec\stm32f1xx_hal_rcc.o"
+"canbus_trans_and_rec\stm32f1xx_hal_rcc_ex.o"
+"canbus_trans_and_rec\stm32f1xx_hal_gpio.o"
+"canbus_trans_and_rec\stm32f1xx_hal_dma.o"
+"canbus_trans_and_rec\stm32f1xx_hal_cortex.o"
+"canbus_trans_and_rec\stm32f1xx_hal_pwr.o"
+"canbus_trans_and_rec\stm32f1xx_hal_flash.o"
+"canbus_trans_and_rec\stm32f1xx_hal_flash_ex.o"
+"canbus_trans_and_rec\stm32f1xx_hal_exti.o"
+"canbus_trans_and_rec\stm32f1xx_hal_tim.o"
+"canbus_trans_and_rec\stm32f1xx_hal_tim_ex.o"
+"canbus_trans_and_rec\system_stm32f1xx.o"
+"canbus_trans_and_rec\can_led_blink.o"
+"canbus_trans_and_rec\can_tx.o"
+"canbus_trans_and_rec\can_rx.o"
+--strict --scatter "canbus_trans_and_rec\canbus_trans_and_rec.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "canbus_trans_and_rec.map" -o canbus_trans_and_rec\canbus_trans_and_rec.axf
